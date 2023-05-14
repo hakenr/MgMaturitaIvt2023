@@ -39,15 +39,15 @@ V matematice existuje zajímavá vlastnost, která umožňuje jednoznačně vyj�
 
 Vaším úkolem je vytvořit program, který pro zadané celé číslo `n` určí, jakými členy Fibonacciho posloupnosti se dá toto číslo vyjádřit. Jako vstupní hodnota bude použito kladné celé číslo menší nebo rovné 1 000 000.
 
-#### Vstup:
+#### Vstup
 
 * číslo *n*
 
-#### Výstup:
+#### Výstup
 
 * členy Fibonacciho posloupnosti, jejichž součtem je číslo `n`
 
-#### Příklad vstupu a výstupu:
+#### Příklad vstupu a výstupu
 
 ```
 10 = 8 + 2
@@ -56,3 +56,21 @@ Vaším úkolem je vytvořit program, který pro zadané celé číslo `n` urč�
 ```
 
 *Poznámka:* Tento jev má své pojmenování, které zde záměrně neuvádíme, abychom příliš neusnadnili hledání vzorových řešení úlohy.
+
+
+## Úloha 2: Rotující prvočíslo
+Vaším úkolem je napsat program, který bude schopen identifikovat n-té rotující prvočíslo. Program by měl být schopen přijmout celé číslo `n` jako vstup od uživatele a vracet `n`-té rotující prvočíslo jako výstup.
+
+#### Pravidla
+* Rotující prvočíslo je prvočíslo, které zůstává prvočíslem pro každou rotaci jeho číslic.
+* Příkladem může být číslo 197, protože všechny rotace jeho číslic (197, 971 a 719) jsou prvočísla.
+* Číslo 1 je považováno za první prvočíslo.
+
+#### Příklady vstupu a výstupu
+```
+5 => 11
+10 => 71
+15 => 131
+```
+
+Pokuste se svůj algoritmus výkonově optimalizovat, popř. si připravte další možnosti optimalizace k obhajobě.
