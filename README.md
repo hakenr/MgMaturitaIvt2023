@@ -1,7 +1,7 @@
 ﻿# Mensa gymnázium, o.p.s. - Maturitní zkouška z IVT 2023 - Zadání
 
 ## Pokyny
-Níže najdete zadání čtyř úloh. Tři z nich naprogramujte ve vhodném programovacím jazyce, jednu můžete vynechat, nebo využít pro získání bonusových bodů. Na práci máte 240 minut, po krátké přestávce pak 15 minut na obhajobu před komisí.
+Níže najdete zadání čtyř úloh. Libovolné tři z nich naprogramujte ve vhodném programovacím jazyce, jednu můžete vynechat, nebo využít pro získání bonusových bodů. Na práci máte 240 minut, po přestávce pak 15 minut na obhajobu před komisí.
 
 Komunikovat smíte pouze se zkoušejícím(i), ale jinak můžete používat internet, literaturu, knihovny, tutoriály, dokumentace, svoje vlastní poznámky, svůj vlastní kód apod.
 
@@ -12,7 +12,7 @@ Není-li předepsaný formát vstupu/výstupu, zvolte vhodnou reprezentaci dle v
 ### Odevzdání a obhajoba
 Založte si privátní GitHub repozitář(e), do kterého **průběžně pushujte** postup své práce. Do repozitáře [**nastavte přístup (colaborator)**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) pro následující GitHub účty:
 * `hakenr`
-* `TODO`
+* `csgut` 
 
 Při závěrečné obhajobě (15 min) bude vaším úkolem představit řešení a funkčnost jednotlivých úloh:
 * vysvětlit stručně postup algoritmu,
@@ -35,13 +35,13 @@ Výsledné hodnocení se určí takto:
 ## Úloha 1: Fibonacciho součet
 V matematice existuje zajímavá vlastnost, která umožňuje jednoznačně vyjádřit každé kladné celé číslo `n` jako součet různých členů Fibonacciho posloupnosti, kdy žádné dva členy spolu nesousedí.
 
-(Fibonacciho posloupnost je posloupnost čísel, kde každé číslo je součtem dvou předchozích čísel v posloupnosti `F(n) = F(n-1) + F(n-2)`. Fibonacciho posloupnost začíná čísly 0, 1, 1, 2, 3, 5, 8, 13, 21, ...)
+(Fibonacciho posloupnost je posloupnost čísel, kde každé číslo je součtem dvou předchozích čísel v posloupnosti , tj. `F(n) = F(n-1) + F(n-2)`. Fibonacciho posloupnost začíná čísly 0, 1, 1, 2, 3, 5, 8, 13, 21, ...)
 
 Vaším úkolem je vytvořit program, který pro zadané celé číslo `n` určí, jakými členy Fibonacciho posloupnosti se dá toto číslo vyjádřit. Jako vstupní hodnota bude použito kladné celé číslo menší nebo rovné 1 000 000.
 
 #### Vstup
 
-* číslo *n*
+* číslo `n`
 
 #### Výstup
 
@@ -56,6 +56,8 @@ Vaším úkolem je vytvořit program, který pro zadané celé číslo `n` urč�
 ```
 
 *Poznámka:* Tento jev má své pojmenování, které zde záměrně neuvádíme, abychom příliš neusnadnili hledání vzorových řešení úlohy.
+
+
 
 
 ## Úloha 2: Rotující prvočíslo
@@ -75,15 +77,33 @@ Vaším úkolem je napsat program, který bude schopen identifikovat n-té rotuj
 
 Pokuste se svůj algoritmus výkonově optimalizovat, popř. si připravte další možnosti optimalizace k obhajobě.
 
+
+
 ## Úloha 3: Morseova kombinatorika
 
 Morseova abeceda je zvláštní druh kódování, který se používá pro zaslání zpráv. Každé písmeno abecedy má svůj vlastní unikátní kód, který je kombinací teček a čárek. Některé kódy jsou delší než ostatní. Například kód pro "E" je jednoduchá tečka, zatímco "Q" je reprezentován jako čárka, čárka, tečka, čárka. Problém však nastává, když jsou zprávy zasílány bez oddělovačů mezi jednotlivými písmeny.
 
 V této úloze budete dostávat zprávy v Morseově abecedě bez jakýchkoli oddělovačů. Vaším úkolem je naprogramovat algoritmus, který zjistí, kolik různých zpráv může daná kombinace teček a čárek reprezentovat. Musíte zohlednit pouze písmena abecedy - žádná čísla, mezery ani jiné symboly. Všechny tečky a čárky ve vstupní zprávě musí být využity - nesmí nic přebývat ani chybět.
 
+```
+A .-      N -.
+B -...    O ---
+C -.-.    P .--.
+D -..     Q --.-
+E .       R .-.
+F ..-.    S ...
+G --.     T -
+H ....    U ..-
+I ..      V ...-
+J .---    W .--
+K -.-     X -..-
+L .-..    Y -.--
+M --      Z --..
+```
+
 #### Vstupy
 
-Jeden řetězec sestávající z teček (.) a čar (-) bez mezery, např. `..`
+Jeden řetězec sestávající z teček (.) a čárek (-) bez mezery, např. `..`
 
 #### Výstupy
 
@@ -94,15 +114,18 @@ Celé číslo reprezentující počet možných zpráv, které daná kombinace t
 ```
 .. => 2
 ... => 4
-
 ```
+
+
 
 ## Úloha 4: Kouzelná koule
 
-Vaším úkolem je vytvořit interaktivní program, který se chová jako "kouzelná koule" pro předpovídání budoucích hodnot na základě minulých dat. Program by měl používat lineární regresní analýzu pomocí metody nejmenších čtverců.
+Vaším úkolem je vytvořit program, který se chová jako "kouzelná koule" pro předpovídání budoucích hodnot na základě minulých dat. Program by měl používat lineární regresní analýzu pomocí metody nejmenších čtverců.
+
+Cílem je najít takovou přímku, která nejlépe odpovídá trénovacím datům. "Nejlépe" se zde definuje jako minimalizace sumy kvadrátů reziduí (odchylek mezi skutečnými a předpovězenými hodnotami). To je princip "nejmenších čtverců". Cílem je najít takové koeficienty, které minimalizují tuto sumu.
 
 #### Vstupy
-Program musí být schopen přijmout data ve formě dvojic nezávislých (x) a závislých (y) proměnných. Formát a způsob předání dat je na vašem rozhodnutí. (Pro testovací účely předpokládejme, že půjde od jednotky těchto dvojic.)
+Program musí být schopen přijmout data ve formě dvojic nezávislých `x` a závislých `y` proměnných. Formát a způsob předání dat je na vašem rozhodnutí. (Pro testovací účely předpokládejme, že půjde od jednotky těchto dvojic.)
 
 #### Zpracování dat
 Po načtení dat by měl program vypočítat lineární regresní model pomocí metody nejmenších čtverců. Model by měl být ve formátu `y = ax + b`, kde `a` je směrnice a `b` je úsek průsečíku s osou y. Parametry modelu vypište na obrazovku.
@@ -112,7 +135,8 @@ Po načtení dat by měl program vypočítat lineární regresní model pomocí 
 
  #### Příklad vstupu a výstupu
 ```
-Trénovací data: {1, 3}, {2, 5}, {3, 7}, {4, 9}, {5, 11}
+Trénovací data {x, y}: {1, 3}, {2, 5}, {3, 7}, {4, 9}, {5, 11}
 Model: y = 2x + 1
 Predikce pro x=6: y = 13
 ```
+
