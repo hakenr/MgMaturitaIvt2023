@@ -74,3 +74,26 @@ Vaším úkolem je napsat program, který bude schopen identifikovat n-té rotuj
 ```
 
 Pokuste se svůj algoritmus výkonově optimalizovat, popř. si připravte další možnosti optimalizace k obhajobě.
+
+## Úloha 3: Morseova kombinatorika
+
+Morseova abeceda je zvláštní druh kódování, který se používá pro zaslání zpráv. Každé písmeno abecedy má svůj vlastní unikátní kód, který je kombinací teček a čárek. Některé kódy jsou delší než ostatní. Například kód pro "E" je jednoduchá tečka, zatímco "Q" je reprezentován jako čárka, čárka, tečka, čárka. Problém však nastává, když jsou zprávy zasílány bez oddělovačů mezi jednotlivými písmeny.
+
+V této úloze budete dostávat zprávy v Morseově abecedě bez jakýchkoli oddělovačů. Vaším úkolem je naprogramovat algoritmus, který zjistí, kolik různých zpráv může daná kombinace teček a čárek reprezentovat. Musíte zohlednit pouze písmena abecedy - žádná čísla, mezery ani jiné symboly. Všechny tečky a čárky ve vstupní zprávě musí být využity - nesmí nic přebývat ani chybět.
+
+#### Vstupy
+
+Jeden řetězec sestávající z teček (.) a čar (-) bez mezery, např. `..`
+
+#### Výstupy
+
+Celé číslo reprezentující počet možných zpráv, které daná kombinace teček a čar může reprezentovat, např. `2` (EE, I).
+
+#### Příklady vstupu a výstupu
+
+```
+.. => 2
+... => 4
+
+```
+
