@@ -97,3 +97,22 @@ Celé číslo reprezentující počet možných zpráv, které daná kombinace t
 
 ```
 
+## Úloha 4: Kouzelná koule
+
+Vaším úkolem je vytvořit interaktivní program, který se chová jako "kouzelná koule" pro předpovídání budoucích hodnot na základě minulých dat. Program by měl používat lineární regresní analýzu pomocí metody nejmenších čtverců.
+
+#### Vstupy
+Program musí být schopen přijmout data ve formě dvojic nezávislých (x) a závislých (y) proměnných. Formát a způsob předání dat je na vašem rozhodnutí. (Pro testovací účely předpokládejme, že půjde od jednotky těchto dvojic.)
+
+#### Zpracování dat
+Po načtení dat by měl program vypočítat lineární regresní model pomocí metody nejmenších čtverců. Model by měl být ve formátu `y = ax + b`, kde `a` je směrnice a `b` je úsek průsečíku s osou y. Parametry modelu vypište na obrazovku.
+
+#### Interaktivní predikce
+ Po výpočtu modelu by měl program umožnit uživateli zadat novou hodnotu `x` a na základě modelu vypočítat a vypsat předpokládanou hodnotu `y`.
+
+ #### Příklad vstupu a výstupu
+```
+Trénovací data: {1, 3}, {2, 5}, {3, 7}, {4, 9}, {5, 11}
+Model: y = 2x + 1
+Predikce pro x=6: y = 13
+```
