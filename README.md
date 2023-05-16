@@ -66,7 +66,7 @@ Vaším úkolem je napsat program, který bude schopen identifikovat n-té rotuj
 #### Pravidla
 * Rotující prvočíslo je prvočíslo, které zůstává prvočíslem pro každou rotaci jeho číslic.
 * Příkladem může být číslo 197, protože všechny rotace jeho číslic (197, 971 a 719) jsou prvočísla.
-* Číslo 1 je považováno za první prvočíslo.
+* Číslo ~~1~~ 2 je považováno za první prvočíslo. *(Opraveno zadání.)*
 
 #### Příklady vstupu a výstupu
 ```
